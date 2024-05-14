@@ -69,7 +69,7 @@
     transition: 0.4s ease-in-out;
 }
 
-.opcoes ul li a:hover::after{
+.link_menu:hover::after{
     width: 100%;
 }
 
@@ -96,7 +96,7 @@
     width: inherit;  
     display: block;
     position: absolute;
-    background-image: linear-gradient(360deg, rgba(210, 207, 207, 0.550) 10%, rgba(11, 12, 12, 0.33) 35%, rgba(255, 255, 255, 0.200) 85%);
+    background-image: linear-gradient(360deg, rgba(210, 207, 207, 0.400) 10%, rgba(11, 12, 12, 0.33) 35%, rgba(255, 255, 255, 0.100) 85%);
 }
 
 @keyframes zoom{
@@ -115,7 +115,7 @@
 .container_busca{
     width: 80%;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 13%;
     text-align: center;
     color: white;
     position: relative;
@@ -130,7 +130,8 @@
 }
 
 .filtro{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     margin-top: 30px;
     background-color: rgba(244, 233, 233, 0.44);
     border-radius: 35px;
@@ -191,6 +192,32 @@
 
 .conteudo_home{
     width: 100%;
-    height: 200px;
-    border: 1px solid red;
+    height: 150px;
+}
+
+.conteudo_secundario{
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .conteudo_secundario div{
+    border: 1px solid black;
+} */
+
+.conteudo_secundario div hr{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.conteudo_secundario h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
 }
