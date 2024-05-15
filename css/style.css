@@ -185,13 +185,13 @@
 
 .filtro form div button:hover{
     background-color:rgb(3, 24, 58);
+    
 }
 
 /* Conteúdo da tela home  */
 
 .conteudo_home{
     width: 100%;
-    margin-bottom: 150px;
 }
 
 .conteudo_secundario{
@@ -205,17 +205,15 @@
 }
 
 
-/* .conteudo_secundario div{
-    border: 1px solid black;
-} */
-
-.conteudo_secundario div hr{
+.conteudo_secundario div hr,
+.container_destaque div hr{
     width: 30%;
     margin: 0 auto;
     margin-top: 25px;
 }
 
-.conteudo_secundario h2{
+.conteudo_secundario h2,
+.container_destaque h2{
     font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
@@ -223,7 +221,7 @@
 
 .container_especialidades{
     width: 100%;
-    height: 650px;
+    height: 800px;
     background-color: #F1F1F7;
     margin: 0 auto;
     display: flex;
@@ -252,7 +250,7 @@
     border: 1px solid rgb(3, 24, 58);;
     background-color:rgb(3, 24, 58);
     border-radius: 8px;
-    margin-top: 93%;
+    margin-top: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -261,10 +259,6 @@
     transition: .7s;
 }
 
-
-.especialidade:hover{
-    
-}
 
 .especialidade div h2{
     width: 90%;
@@ -276,7 +270,7 @@
 
 .especialidade div:hover{
     background-color:rgba(0, 98, 255, 0.044);
-    
+    color: rgb(3, 24, 58);
 }
 
 
@@ -294,4 +288,108 @@
 
 .especialidade:nth-child(4){
     background-image: url('../img/chacara.jpg'); 
+}
+
+.container_destaque{
+    height: 150px;
+}
+
+.container_destaque{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_destaque  p{
+    margin-top: 5px;
+    font-weight: 600;
+    color: gray;
+    text-align: center;
+}
+
+.imoveisdestaque{
+    width: 100%;
+    margin: 0 auto;
+    height: 800px;
+    background-color: #F1F1F7;
+    margin-bottom: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imoveis_d{
+    width: 90%;
+    margin: 0 auto;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imoveis_d div:nth-child(1),
+.imoveis_d div:nth-child(6){
+    width: 600px;
+    height: 350px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.imoveis_d div:nth-child(2),
+.imoveis_d div:nth-child(3),
+.imoveis_d div:nth-child(4),
+.imoveis_d div:nth-child(5)
+{
+    width: 400px;
+    height: 350px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.imoveis_d div:nth-child(1){
+    background-image: url('../img/house.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imoveis_d div:nth-child(2){
+    background-image: url('../img/Screenshot_4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imoveis_d div:nth-child(3){
+    background-image: url('../img/Screenshot_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imoveis_d div:nth-child(4){
+    background-image: url('../img/Screenshot_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imoveis_d div:nth-child(5){
+    background-image: url('../img/Screenshot_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.imoveis_d div:nth-child(6){
+    background-image: url('../img/houseD6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
