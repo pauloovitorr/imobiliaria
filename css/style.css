@@ -206,10 +206,10 @@
 
 
 .conteudo_secundario div hr,
-.container_destaque div hr{
-    width: 30%;
+.container_destaque  hr{
+    width: 100px;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .conteudo_secundario h2,
@@ -304,7 +304,7 @@
 }
 
 .container_destaque  p{
-    margin-top: 5px;
+    margin-top: 15px;
     font-weight: 600;
     color: gray;
     text-align: center;
