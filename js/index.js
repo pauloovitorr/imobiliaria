@@ -1,11 +1,26 @@
 let select_busca = document.querySelectorAll(".select_busca");
 let links = document.querySelectorAll(".link_menu");
+let imoveis_destaque = document.querySelectorAll(".card_imovel");
+
+
+console.log(imoveis_destaque)
+
+// Hover nos imóveis em destaque
+function hover_destaque(){
+  imoveis_destaque.forEach((item)=>{
+    item.addEventListener('mousemove', function(){
+        item.classList.add('conteudo_imovel_destaque_on')
+    });
+  });
+}
+
+hover_destaque()
 
 
 
 // Função que anima os links
 function animaLinks() {
-  let temp = 150;
+  let temp = 100;
 
   links.forEach((link, index) => {
     setInterval(() => {

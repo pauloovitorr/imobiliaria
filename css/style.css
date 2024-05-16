@@ -273,8 +273,9 @@
 
 
 .especialidade div:hover{
-    background-color:rgba(0, 98, 255, 0.044);
-    color: rgb(3, 24, 58);
+    background-color: rgb(0, 98, 255) ;
+    border: 1px solid rgb(0, 98, 255);
+    
 }
 
 
@@ -324,6 +325,25 @@
 }
 
 
+.card_imovel{
+    display: flex;
+    align-items: end;
+}
+
+.conteudo_imovel_destaque{
+   width: 100%;
+   height: 10px;
+   background-color: rgb(21, 255, 0);
+   transition: .5s;
+}
+
+.conteudo_imovel_destaque_on{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 110, 255);
+    transition: .5s;
+}
+
 .imoveis_d{
     width: 90%;
     margin: 0 auto;
@@ -334,8 +354,8 @@
     justify-content: center;
 }
 
-.imoveis_d div:nth-child(1),
-.imoveis_d div:nth-child(6){
+.imoveis_d .card_imovel:nth-child(1),
+.imoveis_d .card_imovel:nth-child(6){
     width: 41%;
     height: 350px;
     border: 1px solid transparent;
@@ -343,10 +363,10 @@
     margin: 10px;
 }
 
-.imoveis_d div:nth-child(2),
-.imoveis_d div:nth-child(3),
-.imoveis_d div:nth-child(4),
-.imoveis_d div:nth-child(5)
+.imoveis_d .card_imovel:nth-child(2),
+.imoveis_d .card_imovel:nth-child(3),
+.imoveis_d .card_imovel:nth-child(4),
+.imoveis_d .card_imovel:nth-child(5)
 {
     width: 20%;
     height: 350px;
@@ -355,35 +375,35 @@
 }
 
 
-.imoveis_d div:nth-child(1){
+.imoveis_d .card_imovel:nth-child(1){
     background-image: url('../img/house.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.imoveis_d div:nth-child(2){
+.imoveis_d .card_imovel:nth-child(2){
     background-image: url('../img/Screenshot_4.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.imoveis_d div:nth-child(3){
+.imoveis_d .card_imovel:nth-child(3){
     background-image: url('../img/Screenshot_1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.imoveis_d div:nth-child(4){
+.imoveis_d .card_imovel:nth-child(4){
     background-image: url('../img/Screenshot_2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.imoveis_d div:nth-child(5){
+.imoveis_d .card_imovel:nth-child(5){
     background-image: url('../img/Screenshot_3.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -391,7 +411,7 @@
 }
 
 
-.imoveis_d div:nth-child(6){
+.imoveis_d .card_imovel:nth-child(6){
     background-image: url('../img/houseD6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -496,10 +516,11 @@
 
 
   .carousel__slider__item .item__3d-frame__box {
-    width: 100%;
+    width: 90%;
     height: 420px;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid red; */
   }
   
 .item__3d-frame__box img {
@@ -516,7 +537,7 @@
   }
 
   .carousel__slider__item:hover {
-    scale: 1.1;
+    scale: 1.02;
   }
 
   .dados_imove_venda{
