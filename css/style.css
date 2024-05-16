@@ -96,7 +96,7 @@
     width: inherit;  
     display: block;
     position: absolute;
-    background-image: linear-gradient(360deg, rgba(210, 207, 207, 0.400) 10%, rgba(11, 12, 12, 0.33) 35%, rgba(255, 255, 255, 0.100) 85%);
+    background-image: linear-gradient(360deg, rgba(210, 207, 207, 0.608) 10%, rgba(11, 12, 12, 0.33) 35%, rgba(255, 255, 255, 0.100) 85%);
 }
 
 @keyframes zoom{
@@ -196,24 +196,28 @@
 
 .conteudo_secundario{
     width: 60%;
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+ 
 }
 
 
 .conteudo_secundario div hr,
-.container_destaque  hr{
+.container_destaque  hr,
+.destaque_venda hr{
     width: 100px;
     margin: 0 auto;
     margin-top: 10px;
 }
 
 .conteudo_secundario h2,
-.container_destaque h2{
+.container_destaque h2,
+.destaque_venda h2{
     font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
@@ -221,8 +225,8 @@
 
 .container_especialidades{
     width: 100%;
-    height: 800px;
-    background-color: #F1F1F7;
+    height: 600px;
+    background-color: white;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -290,32 +294,30 @@
     background-image: url('../img/chacara.jpg'); 
 }
 
-.container_destaque{
-    height: 150px;
-}
 
 .container_destaque{
     width: 100%;
-    height: 150px;
+    height: 130px;
+    background-color: #F1F1F7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    
 }
 
 .container_destaque  p{
     margin-top: 15px;
     font-weight: 600;
-    color: gray;
+    color: rgba(80, 77, 77, 0.837);
     text-align: center;
 }
 
 .imoveisdestaque{
     width: 100%;
     margin: 0 auto;
-    height: 800px;
+    height: 900px;
     background-color: #F1F1F7;
-    margin-bottom: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -334,7 +336,7 @@
 
 .imoveis_d div:nth-child(1),
 .imoveis_d div:nth-child(6){
-    width: 600px;
+    width: 41%;
     height: 350px;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -346,7 +348,7 @@
 .imoveis_d div:nth-child(4),
 .imoveis_d div:nth-child(5)
 {
-    width: 400px;
+    width: 20%;
     height: 350px;
     border-radius: 5px;
     margin: 10px;
@@ -357,6 +359,7 @@
     background-image: url('../img/house.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .imoveis_d div:nth-child(2){
@@ -393,3 +396,207 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+
+
+.destaque_venda{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.destaque_venda h2{
+    margin-top: 50px;
+}
+
+
+/* Carrosel */
+
+:root {
+    --crsl-bg: transparent;
+    --box-bg: #1e272e;
+    --box-shadow: #0000001c;
+    --box-shadow-border: #0000000f;
+    --box-border: #fff;
+  }
+  
+
+ 
+
+  
+  .carousel {
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */    
+  }
+  
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    bottom: -15%;
+    transition: transform 0.25s ease;
+  }
+  
+  .carousel__prev:hover,
+  .carousel__next:hover {
+    transform: scale(1.25);
+  }
+  
+  .carousel__prev {
+    left: 40%;
+  }
+  
+  .carousel__next {
+    right: 40%;
+  }
+  
+  .carousel__body {
+    width: 100%;
+    height: 500px;
+    padding: 20px 0 50px 0;
+    overflow: hidden;
+  }
+  
+  .carousel__slider {
+    position: relative;
+    transition: transform 1s ease-in-out;
+    background: var(--crsl-bg);
+
+  }
+  
+  .carousel__slider__item {
+    position: relative;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .6s all;
+  
+  }
+  
+  .carousel__slider__item .item__3d-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+  }
+  
+   
+
+
+  .carousel__slider__item .item__3d-frame__box {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .carousel__slider__item .item__3d-frame__box img {
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+    width: 100%;
+    height: 250px;
+    margin: 0px;
+  }
+
+  .carousel__slider__item:hover .dados_imove_venda{
+    box-shadow: 1px 10px 10px 1px rgba(128, 128, 128, 0.056);
+  }
+
+  .carousel__slider__item:hover {
+    scale: 1.1;
+  }
+
+  .dados_imove_venda{
+    height: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: visible;
+    box-shadow: 1px 10px 10px 1px gray;
+    padding: 8px;
+    transition: .7s all;
+  }
+
+  .dados_tipo_venda{
+    width: 100%;
+    height: 80px;
+   /* border: 1px solid red; */
+  }
+
+  .valor_venda{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+  }
+
+  .icones_venda{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+  .icones_venda i{
+    min-width: 50px;
+    max-width: 100px;
+    max-height: 20px;
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+
+
+  .valor_venda strong{
+    font-size: 1.5rem;
+  }
+  
+  .carousel__slider__item .item__3d-frame__box--right,
+  .carousel__slider__item .item__3d-frame__box--left {
+    top: 0;
+    width: 40px;
+    backface-visibility: hidden;
+  }
+
+  .carousel__prev i,
+.carousel__next i {
+  font-size: 60px;
+  color: #1e272e;
+  cursor: pointer;
+}
+
+.carousel__prev:hover i,
+.carousel__next:hover i {
+  transform: scale(1.25);
+}
+
+  
+  .carousel__slider__item .item__3d-frame__box--left {
+    left: 0;
+    border-left-width: 5px;
+    transform: translate3d(1px, 0, -40px) rotateY(-90deg);
+    transform-origin: 0%;
+  }
+  
+  .carousel__slider__item .item__3d-frame__box--right {
+    right: 0;
+    border-right-width: 5px;
+    transform: translate3d(-1px, 0, -40px) rotateY(90deg);
+    transform-origin: 100%;
+  }
+  
+ 
+  
