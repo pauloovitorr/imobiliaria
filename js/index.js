@@ -68,26 +68,26 @@ select_busca.forEach((item) => {
       }
   }
   
-  // function move(index) {
+  function move(index) {
     
-  //     if(index < 1) index = items.length;
-  //     if(index > items.length) index = 1;
-  //     currIndex = index;
+      if(index < 1) index = items.length;
+      if(index > items.length) index = 1;
+      currIndex = index;
     
-  //     for(var i = 0; i < items.length; i++) {
-  //         let item = items[i],
-  //             box = item.getElementsByClassName('item__3d-frame')[0];
-  //         if(i == (index - 1)) {
-  //            item.classList.add('carousel__slider__item--active');
-  //             box.style.transform = "perspective(1200px)"; 
-  //         } else {
-  //           item.classList.remove('carousel__slider__item--active');
-  //             box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
-  //         }
-  //     }
+      for(var i = 0; i < items.length; i++) {
+          let item = items[i],
+              box = item.getElementsByClassName('item__3d-frame')[0];
+          if(i == (index - 1)) {
+             item.classList.add('carousel__slider__item--active');
+              box.style.transform = "perspective(1200px)"; 
+          } else {
+            item.classList.remove('carousel__slider__item--active');
+              box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
+          }
+      }
     
-  //     slider.style.transform = "translate3d(" + ((index * -width) + (width / 2) + window.innerWidth / 2) + "px, 0, 0)";
-  // }
+      slider.style.transform = "translate3d(" + ((index * -width) + (width / 2) + window.innerWidth / 2) + "px, 0, 0)";
+  }
   
   function timer() {
       clearInterval(interval);    
