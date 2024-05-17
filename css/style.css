@@ -254,7 +254,7 @@
     border: 1px solid rgb(3, 24, 58);;
     background-color:rgb(3, 24, 58);
     border-radius: 8px;
-    margin-top: 85%;
+    margin-top: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -328,20 +328,88 @@
 .card_imovel{
     display: flex;
     align-items: end;
+    transition: .5s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    
+    
 }
+
+
+ .card_imovel::after{
+    content: ' ';
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.295),  rgba(0, 0, 0, 0.06));
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.card_imovel:hover::after{
+    opacity: 1;
+}
+ 
 
 .conteudo_imovel_destaque{
-   width: 100%;
-   height: 10px;
-   background-color: rgb(21, 255, 0);
-   transition: .5s;
+   width:100%;
+   /* margin: 0 auto; */
+   height: 00px;
+   background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.926) 40%, transparent 75%);
+   transition: .5s ease;
+   /* box-shadow: -10px -10px 20px 1px rgba(0, 0, 0, 0.733); */
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   padding-left: 20px;
+   padding-top: 10px;
 }
 
-.conteudo_imovel_destaque_on{
+
+.conteudo_imovel_destaque h3{
+    color: white;
+    font-size: 1.0rem ;
+    /* border: 1px solid red; */
+    width: 70%;
+}
+
+.valor_des{
+    font-size: 1.4rem;
+    color: white;
+    /* border-top: 1px solid rgba(128, 128, 128, 0.345); */
+}
+
+.icon_des{
+    width: 220px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon_des i{
+    width: 45px;
+    /* border: 1px solid red; */
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.corretor_resp{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 5px;
+    z-index: 5;
+}
+
+.corretor_resp img{
     width: 100%;
-    height: 100px;
-    background-color: rgb(0, 110, 255);
-    transition: .5s;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 98, 255);
 }
 
 .imoveis_d{

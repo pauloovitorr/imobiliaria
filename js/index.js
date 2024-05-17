@@ -3,15 +3,29 @@ let links = document.querySelectorAll(".link_menu");
 let imoveis_destaque = document.querySelectorAll(".card_imovel");
 
 
-console.log(imoveis_destaque)
 
 // Hover nos imóveis em destaque
 function hover_destaque(){
   imoveis_destaque.forEach((item)=>{
-    item.addEventListener('mousemove', function(){
-        item.classList.add('conteudo_imovel_destaque_on')
+    item.addEventListener('mouseover', function(){
+        let filho = item.firstElementChild
+        filho.style.height = '170px'
+        item.style.border = 'red'
     });
   });
+
+  imoveis_destaque.forEach((item)=>{
+    item.addEventListener('mouseleave', function(){
+        let filho = item.firstElementChild
+        filho.style.height = '0px'
+        item.style.border = 'none'
+    });
+  });
+
+
+
+
+
 }
 
 hover_destaque()
