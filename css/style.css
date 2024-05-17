@@ -209,7 +209,8 @@
 
 .conteudo_secundario div hr,
 .container_destaque  hr,
-.destaque_venda hr{
+.destaque_venda hr,
+.destaque_aluguel hr{
     width: 100px;
     margin: 0 auto;
     margin-top: 10px;
@@ -217,7 +218,8 @@
 
 .conteudo_secundario h2,
 .container_destaque h2,
-.destaque_venda h2{
+.destaque_venda h2,
+.destaque_aluguel h2{
     font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
@@ -332,9 +334,11 @@
     border: 2px solid transparent;
     cursor: pointer;
     overflow: hidden;
-    position: relative;
-    
-    
+    position: relative;    
+}
+
+.card_imovel:hover{
+    box-shadow: 3px 5px 5px 5px gray;
 }
 
 
@@ -490,15 +494,16 @@
 
 .destaque_venda{
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    
 }
 
 .destaque_venda h2{
     margin-top: 50px;
+
 }
 
 
@@ -546,9 +551,10 @@
   
   .carousel__body {
     width: 100%;
-    height: 500px;
-    padding: 20px 0 50px 0;
+    height: 550px;
+    padding: 50px 10px ;
     overflow: hidden;
+    /* border: 1px solid red; */
   }
   
   .carousel__slider {
@@ -600,11 +606,13 @@
     /* border: 1px solid red; */
   }
 
-  .carousel__slider__item:hover .dados_imove_venda{
+  .carousel__slider__item:hover .dados_imove_venda,
+  .item_destaque:hover .dados_imove_venda{
     box-shadow: 1px 10px 10px 1px rgba(128, 128, 128, 0.056);
   }
 
-  .carousel__slider__item:hover {
+  .carousel__slider__item:hover,
+ .item_destaque:hover{
     scale: 1.02;
   }
 
@@ -628,24 +636,26 @@
     width: 100%;
     height: 35px;
     margin-top: 10px;
+    color: rgb(0, 98, 255);
     /* border: 1px solid red; */
   }
 
   .icones_venda{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
     overflow: hidden;
+    /* border: 1px solid red; */
   }
 
   .icones_venda i{
-    min-width: 50px;
-    max-width: 100px;
+    min-width: 40px;
+    max-width: 70px;
     max-height: 20px;
     color: rgba(0, 0, 0, 0.582);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     text-align: center;
     /* border: 1px solid red; */
   }
@@ -690,5 +700,47 @@
     transform-origin: 100%;
   }
   
- 
+ .destaque_aluguel{
+    min-height: 900px;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #F1F1F7;
+    
+ }
   
+ .destaque_aluguel div:nth-child(1) h2{
+    margin-top: 40px;
+ }
+
+ .imovel_destaque{
+    width: 90%;
+    
+    margin: 0 auto;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .item_destaque{
+     width: 320px ; 
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .5s;
+ }
+
+ .item_destaque  img{
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+    width: 100%;
+    min-height: 230px;
+    margin: 0px;
+ }
+ 
