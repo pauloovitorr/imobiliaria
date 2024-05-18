@@ -946,7 +946,7 @@
 
 .card_depoimento{
     flex: 0 0 300px; 
-    height: 380px;
+    height: 390px;
     border: 1px solid transparent;
     /* background-color: rgb(30, 255, 0); */
     margin-left: 50px;
@@ -967,7 +967,8 @@
 }
 
 .foto_cliente img{
-    width: 100%;
+    width: 90%;
+    height: 160px;
     border-radius: 50%;
     text-align: center;
 }
@@ -1008,14 +1009,27 @@
 
 .descri_depoimento{
     width: 260px;
+    height: 100px;
     margin: 0 auto;
     /* border: 1px solid red; */
     padding: 5px;
     color: white;
+    overflow: hidden;
+}
+
+
+.emaildepoimento{
+    width: 260px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    /* border: 1px solid rgb(9, 255, 0); */
+    color: #c8cace;
+    padding: 3px;
 }
 
 .descri_depoimento p:nth-child(2){
     margin-top: 10px;
     font-weight: 700;
-    color: #c8cace;
+    
 }
