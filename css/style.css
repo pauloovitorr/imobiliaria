@@ -685,7 +685,8 @@
   }
 
   .carousel__prev i,
-.carousel__next i {
+.carousel__next i,
+.movimentar_car_equipe i {
   font-size: 60px;
   color: #1e272e;
   cursor: pointer;
@@ -913,7 +914,8 @@
 
 .container_carrossel{
     width: 100%;
-    height: 800px;
+    /* padding: 10px; */
+    /* height: 800px; */
     /* background-color: rgba(8, 154, 115, 0.592); */
     border: 1px solid transparent;
     overflow: hidden;
@@ -928,27 +930,31 @@
     justify-content: center;
 }
 
-.carrossel_depoimentos{
+.carrossel_depoimentos,
+.corressel_equipe{
     width: 90%;
     margin: 0 auto;
-    height: 450px;
+    /* height: 550px; */
     /* background-color: rgba(255, 242, 0, 0.737); */
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;
     overflow: hidden;
+    padding: 15px;
+    /* border-bottom: 1px solid gray; */
 }
 
 .pai_card{
     width: 100%;
     height: 100%;
     display: flex;
-    transition: transform 0.4s ease-in-out
+    transition: transform 0.4s ease-in-out;
+    /* border: 1px solid rgb(4, 255, 0); */
 }
 
-.card_depoimento{
+.card_depoimento,
+.card_equipe{
     flex: 0 0 300px; 
     height: 390px;
     border: 1px solid transparent;
-    /* background-color: rgb(30, 255, 0); */
     margin-left: 50px;
     border-radius: 10px;
     display: flex;
@@ -958,6 +964,7 @@
     margin-top: 15px;
     padding: 8px;
     background-color: #0D1E30;
+    transition: .5s all;
 }
 
 .foto_cliente{
@@ -1026,10 +1033,79 @@
     /* border: 1px solid rgb(9, 255, 0); */
     color: #c8cace;
     padding: 3px;
+    /* border: 2px solid red; */
+}
+
+.emaildepoimento i{
+    margin-right: 8px;
 }
 
 .descri_depoimento p:nth-child(2){
     margin-top: 10px;
     font-weight: 700;
     
+}
+
+
+.corressel_equipe{
+    width: 90%;
+    margin: 0 auto;
+    /* height: 500px; */
+    /* border: 1px solid red; */
+    /* background: #F1F1F7; */
+    overflow: hidden;
+}
+
+.pai_equipe{
+    width: 100%;
+    margin: 0 auto;
+    height: 450px;
+    /* border: 2px solid blue; */
+    display: flex;
+    transition: transform 0.7s ease;
+    /* overflow: hidden; */
+    /* background-color: #F1F1F7; */
+    /* transform: translateX(-500px); */
+}
+
+.card_equipe{
+    background-color: #0D1E30;
+    transition: .5s all;
+}
+
+.card_equipe:hover,
+.card_depoimento:hover{
+    background-color: #0d1e30d3;
+    
+}
+
+.icon_corretor{
+    width: 260px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: #c8cace;
+    padding: 3px;
+    /* border: 2px solid red; */
+}
+
+.icon_corretor i{
+    margin-right: 8px;
+}
+
+.movimentar_car_equipe{
+    width: 200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.movimentar_car_equipe i{
+    transition: .5s all;
+}
+
+.movimentar_car_equipe i:hover{
+    scale: 1.4;
 }

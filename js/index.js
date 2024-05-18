@@ -5,6 +5,57 @@ let imoveis_destaque = document.querySelectorAll(".card_imovel");
 let pai_card = document.querySelector(".pai_card");
 let card = document.querySelectorAll(".card_depoimento");
 
+let pai_equipe = document.querySelector(".pai_equipe");
+let card_equipe = document.querySelectorAll(".card_equipe");
+
+let volta = document.querySelector('.volta')
+let passa = document.querySelector('.passa')
+
+
+volta.addEventListener('click', function(){
+  volta_equipe()
+})
+
+passa.addEventListener('click', function(){
+  corresel_equipe()
+})
+
+
+let cont_equipe = 0
+
+// Corresel Equipe
+function corresel_equipe(){
+ 
+  cont_equipe++
+
+    if(cont_equipe > card_equipe.length - 1){
+      cont_equipe = 0
+    }
+
+    pai_equipe.style.transform = `translateX(${-cont_equipe * 360}px)`
+    console.log(cont_equipe)
+
+}
+
+
+function volta_equipe(){
+  
+  
+  cont_equipe--
+
+  if(cont_equipe < 0){
+    cont_equipe = card_equipe.length - 1
+  }
+
+    pai_equipe.style.transform = `translateX(-${cont_equipe * 350}px)`
+
+    console.log('oooooooooo' + cont_equipe)
+
+}
+
+
+
+setInterval(corresel_equipe, 6000)
 
 
 
@@ -13,6 +64,7 @@ let cont_depoimento = 0
 
 // Corresel Depoimentos
 function corresel(){
+ 
   cont_depoimento++
 
     if(cont_depoimento > card.length - 1){
@@ -23,7 +75,9 @@ function corresel(){
 
 }
 
-// setInterval(corresel, 3000)
+
+
+setInterval(corresel, 5500)
 
 
 
@@ -33,7 +87,7 @@ function hover_destaque(){
   imoveis_destaque.forEach((item)=>{
     item.addEventListener('mouseover', function(){
         let filho = item.firstElementChild
-        filho.style.height = '170px'
+        filho.style.height = '220px'
         item.style.border = 'red'
     });
   });
