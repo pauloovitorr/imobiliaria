@@ -2,6 +2,30 @@ let select_busca = document.querySelectorAll(".select_busca");
 let links = document.querySelectorAll(".link_menu");
 let imoveis_destaque = document.querySelectorAll(".card_imovel");
 
+let pai_card = document.querySelector(".pai_card");
+let card = document.querySelectorAll(".card_depoimento");
+
+
+
+
+
+let cont_depoimento = 0
+
+// Corresel Depoimentos
+function corresel(){
+  cont_depoimento++
+
+    if(cont_depoimento > card.length - 1){
+      cont_depoimento = 0
+    }
+
+    pai_card.style.transform = `translateX(${-cont_depoimento * 350}px)`
+
+}
+
+// setInterval(corresel, 3000)
+
+
 
 
 // Hover nos imóveis em destaque
