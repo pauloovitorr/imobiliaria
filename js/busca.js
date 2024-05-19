@@ -1,5 +1,17 @@
 let links = document.querySelectorAll(".link_menu");
 
+// Anima os links do menu
+function animaLinks() {
+  let temp = 100;
+
+  links.forEach((link, index) => {
+    setInterval(() => {
+      link.classList.add("link_menu_pag");
+    }, temp * (index + 1));
+  });
+}
+
+animaLinks();
 
 let pai_fotos_imovel = document.querySelector('.pai_fotos_imovel')
 let img_imovel = document.querySelectorAll('.foto_imovel')
@@ -57,15 +69,3 @@ function volta_equipe() {
 
 
 
-// Anima os links do menu
-function animaLinks() {
-    let temp = 100;
-  
-    links.forEach((link, index) => {
-      setInterval(() => {
-        link.classList.add("link_menu_pag");
-      }, temp * (index + 1));
-    });
-  }
-  
-  animaLinks();

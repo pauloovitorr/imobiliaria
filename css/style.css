@@ -1158,8 +1158,9 @@ html {
 
 .conteiner_busca_imovel{
     width: 100%;
-    min-height: 70vh;
+    min-height: 65vh;
     background-color: #F1F1F7;
+    border: 1px solid transparent
 }
 
 .itens_busca{
@@ -1220,14 +1221,13 @@ html {
 
 .conteiner_imoveis_busca{
     width: 100%;
-    /* height: 300px; */
-    /* border: 1px solid red; */
-    padding-bottom: 100px;
+    border: 1px solid transparent;
+    margin-bottom: 100px;
 }
 
 .pai_busca_imovel{
     width: 1300px;;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     /* border: 1px solid blue; */
 }
@@ -1248,11 +1248,7 @@ html {
      /* border: 1px solid red; */
 }
 
-.pai_fotos_imovel img{
-    /* min-width: 400px; */
-    /* max-width: 500px; */
-    
-}
+
 
 .movimentar_foto_imovel{
     width: 100%;
@@ -1279,4 +1275,269 @@ html {
 .movimentar_foto_imovel i{
     font-size: 60px;
     color: white;
+}
+
+.container_dados_imovel{
+    width: 100%;
+    /* height: 900px; */
+    background-color: #F1F1F7;
+    padding-bottom: 100px;
+    /* border: 1px solid red; */
+}
+
+.pai_conteudo{
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_imovel{
+    /* width: 80%; */
+    flex: 0 0 75%;
+    height: 460px;
+    background-color: white;
+}
+
+.info_imovel h1{
+    font-size: 2.5rem;
+    /* width: 80%; */
+    /* border: 2px solid red; */
+}
+
+
+.texto_titulo{
+    width: 70%;
+    margin-top: 25px;
+    margin-left: 25px;
+    /* border: 1px solid black; */
+}
+
+
+.icones_compartilhar{
+    width: 40%;
+    height: 50px;
+    /* border: 1px solid red; */
+}
+
+.pai_valor{
+    width: 95%;
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.pai_valor div{
+    height: 70px;
+    padding: 8px;
+    margin-left: 15px;
+    text-align: center;
+    border-right: 2px solid #F1F1F7;
+    /* border: 2px solid red; */
+}
+
+.pai_valor div p{
+    font-size: 1.1rem;
+}
+
+
+.valor_imovel{
+    /* border: 2px solid red; */
+    height: 80px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    width: 30%;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    min-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.valor_imovel::before {
+    content: "";
+    position: absolute;
+    left: -41%;
+    height: 100%;
+    width: 150%;
+    top: 0;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.valor_imovel, .valor_imovel::before{
+    background-color: #0D1E30;
+}
+
+.icones_compartilhar a img{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.faleconosco{
+    flex: 0 0 24%;
+    background-color: white;
+    height: 460px;
+    padding: 10px;
+    /* margin-left: 8px; */
+}
+
+.faleconosco form{
+    background-color: #fdd786;
+    border: 1px solid #FEB00E;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.faleconosco form input {
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    padding: 10px;
+    color: #000;
+    border-radius: 2px;
+    border: 1px solid #e1a94d;
+}
+
+.faleconosco form button {
+    background-color: #FF3F00;
+    box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, .12);
+    color: #fff;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.faleconosco__cod {
+    width: 50%;
+    text-align: center;
+}
+
+.faleconosco__codinput {
+    width: 30% !important;
+}
+
+.caracteristicas,
+.container_descricao,
+.container_central_de_negocios{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.pontos_fortes{
+    width: 75%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.pontos_fortes p{
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #F1F1F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .5s all;
+    font-size: 1.1rem;
+}
+
+.pontos_fortes p:hover{
+    color: white;
+    background-color: #0D1E30;
+    border: 1px solid #0D1E30;
+}
+
+.pontos_fortes p strong{
+    margin-left: 5px;
+}
+
+.pai_descricao,
+.pai_central_negocios{
+    width: 75%;
+    background-color: white;
+    padding: 25px;
+}
+
+.pai_descricao:hover .titulo_desc hr,
+.pai_central_negocios:hover .titulo_central hr {
+    width: 90%;
+}
+
+.titulo_desc,
+.titulo_central{
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.titulo_desc hr,
+.titulo_central hr{
+    height: 5px;
+    margin-top: 5px;
+    width: 25%;
+    background-color: #0D1E30;
+    transition: .5s ease;
+}
+
+.descricao_imovel{
+    width: 97%;
+    font-size: 1.0rem;
+}
+
+.proximidades{
+    width: 90% ;
+    margin-top: 30px
+}
+
+.proximidades hr{
+    height: 5px;
+    margin-top: 5px;
+    width: 30%;
+    background-color: #0D1E30;
+    transition: .5s ease;
+    margin-bottom: 10px;
+}
+
+.proximidades:hover hr{
+    width: 5%;
+}
+
+.pai_itens-proximidades{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.cxItem i{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 0px;
+}
+
+.titulo_central hr{
+    margin-bottom: 30px
 }
