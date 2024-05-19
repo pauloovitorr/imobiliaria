@@ -1660,8 +1660,10 @@ html {
     /* background-color: #F1F1F7; */
 }
 
+
+
 .titulo_pagina{
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     height: 100px;
     /* border: 1px solid red; */
@@ -1669,6 +1671,7 @@ html {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    background-color: #F1F1F7;
 }
 
 .texto_sobre_nos{
@@ -1676,13 +1679,16 @@ html {
     margin: 0 auto;
     padding-bottom: 100px;
     /* border: 2px solid red; */
-    background-color: white;
+    /* background-color: white; */
 }
 
-.pai_texto{
+.pai_texto,
+.pai_contato{
     width: 80%;
     margin: 0 auto;
     padding-top: 20px;
+    font-size: 1.1rem;
+    /* border: 1px solid red; */
 }
 
 .mapa{
@@ -1694,4 +1700,74 @@ html {
 .mapa p{
     font-size: 1.1rem;
     margin-bottom: 10px;
+}
+
+.form_contato{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-bottom: 100px;
+}
+
+.form_contato {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.form_contato hr,
+.form_contato span{
+    color: #888383;
+    width: 90%;
+}
+
+
+
+.pai_input_contato{
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+
+.pai_input_contato input{
+    width: 90%;
+    padding: 10px;
+    font-size: 1.0rem;
+}
+
+.pai_text_contato{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+}
+
+.pai_text_contato textarea{
+    width: 90%;
+    padding: 10px;
+    font-size: 1.0rem;
+}
+
+.cod_contato{
+    width: 90%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cod_contato p:nth-child(1){
+    border: 1px solid #CCCCCC;
+    background-color: #CCCCCC;
+    padding: 10px 25px;
+}
+
+.cod_contato input{
+    padding: 10px 5px;
+    font-size: 1.0rem;
+}
+
+.cod_contato button{
+    padding: 10px 25px;
+    background-color: #0D1E30;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
