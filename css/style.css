@@ -7,10 +7,33 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #0D1E30; 
+    border-radius: 10px; 
+}
+
+
+
 .container_nav{
     width: 100%;
     display: flex;
+    height: 130px;
+    
+    /* background-color: #0D1E30; */
+}
+
+.container_nav_pag{
+    width: 100%;
+    display: flex;
     height: 100px;
+    background-color: white;
 }
 
 .logo{
@@ -19,11 +42,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid red; */
 }
 
-.logo img{
-    width: 60%;
+.logo a img{
+    width: 100%;
     position: relative;
+    /* border: 1px solid red; */
 }
 
 .opcoes{
@@ -60,11 +85,17 @@
     top: 0;
 }
 
+.link_menu_pag{
+    top: 0;
+    color: black !important;
+   
+}
+
 .link_menu::after{
     content: " ";
     width: 0%;
     height: 3px;
-    background-color: rgb(0, 98, 255);
+    background-color: #0D1E30;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -349,7 +380,7 @@
 
  .card_imovel::after{
     content: ' ';
-    height: 50%;
+    height: 37%;
     width: 100%;
     position: absolute;
     background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.295),  rgba(0, 0, 0, 0.06));
@@ -376,6 +407,7 @@
    position: relative;
    padding-left: 20px;
    padding-top: 10px;
+   
 }
 
 
@@ -393,8 +425,8 @@
 }
 
 .icon_des{
-    width: 220px;
-    margin-top: 10px;
+    width: 200px;
+    margin-top: 30px;
     font-size: 0.7rem;
     /* border: 1px solid red; */
     display: flex;
@@ -402,7 +434,7 @@
 }
 
 .icon_des i{
-    width: 45px;
+    /* width: 45px; */
     /* border: 1px solid red; */
     color: rgba(255, 255, 255, 0.527);
 }
@@ -599,8 +631,8 @@
 
 /* Paulo */
   .carousel__slider__item .item__3d-frame__box {
-    width: 350px ; 
-    height: 400px;
+    width: 330px ; 
+    height: 380px;
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
@@ -726,11 +758,10 @@
 
  .imovel_destaque{
     width: 90%;
-    
     margin: 0 auto;
     margin-top: 30px;
     /* border: 1px solid red; */
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -740,8 +771,8 @@
 
  /* Paulo */
  .item_destaque{
-    width: 350px ; 
-    height: 400px;
+    width: 330px ; 
+    height: 380px;
     margin-top: 30px;
     margin-bottom: 10px; 
     display: flex;
@@ -790,7 +821,7 @@
  }
 
  .rodape{
-    margin-top: 150px;
+    /* margin-top: 150px; */
     height: 450px;
     width: 100%;
     /* background-image: linear-gradient(120deg,  #F1F1F7 , white); */
@@ -919,6 +950,7 @@
     /* background-color: rgba(8, 154, 115, 0.592); */
     border: 1px solid transparent;
     overflow: hidden;
+    margin-bottom: 150px;
 }
 
 .titulo_section{
@@ -928,6 +960,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .carrossel_depoimentos,
@@ -938,8 +971,8 @@
     /* background-color: rgba(255, 242, 0, 0.737); */
     transition: transform 0.7s ease-in-out;
     overflow: hidden;
-    padding: 15px;
-    /* border-bottom: 1px solid gray; */
+    /* padding: 15px; */
+    /* border: 1px solid rgb(223, 11, 11); */
 }
 
 .pai_card{
@@ -1108,4 +1141,70 @@
 
 .movimentar_car_equipe i:hover{
     scale: 1.4;
+}
+
+
+/* .corpo_busca{
+    width: 100%;
+    height: 100vh;
+    background-color: #F1F1F7;
+} */
+
+.conteiner_busca_imovel{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #F1F1F7;
+}
+
+.itens_busca{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #21212217;
+}
+
+.pai_input_busca{
+    width: 85%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+
+.pai_input_busca div{
+    width: 150px ;
+   
+}
+
+.pai_input_busca div select,
+.pai_input_busca div input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    outline: none;
+}
+
+.pai_input_busca div button{
+    width: 70%;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #0D1E30;
+    color: white;
+    cursor: pointer;
+    font-size: 1.0rem;
+    transition: .5s;
+}
+
+
+.pai_input_busca div button:hover{
+    background-color: #0062FF;
+    
+}
+
+.pai_input_busca div i{
+    margin-left: 10px;
 }

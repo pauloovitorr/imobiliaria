@@ -77,7 +77,7 @@ function corresel(){
 
 
 
-setInterval(corresel, 5500)
+setInterval(corresel, 8000)
 
 
 
@@ -122,6 +122,7 @@ function animaLinks() {
 }
 
 animaLinks();
+
 
 
 

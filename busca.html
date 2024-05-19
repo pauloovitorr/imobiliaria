@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/busca.js" defer></script>
+    <title>Teste frontend</title>
+
+  </head>
+  <body>
+
+    <section>
+
+      <nav class="container_nav_pag">
+
+        <div class="logo">
+          <a href="./home.html"><img src="./img/logo.png" alt="" /></a>
+        </div>
+
+        <div class="opcoes">
+
+          <ul>
+            <li><a class="link_menu " class="link_menu" href="home.html" >Home</a></li>
+            <li><a class="link_menu " href="./busca.html" aria-current="page">Buscar Imóveis</a></li>
+            <li><a class="link_menu " href="">Contato</a></li>
+            <li><a class="link_menu " href="">Blog</a></li>
+            <li><a class="link_menu " href="">Quem somos</a></li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+    </section>
+
+    <section class="conteiner_busca_imovel">
+        <div class="itens_busca">
+                <form action="" method="get">
+
+                    <div class="pai_input_busca">
+                        <div>
+                            <input type="text" name="busca_cod" placeholder="Buscar por Código">
+                        </div>
+    
+                        <div>
+                            <select name="busca_finalidade" id="">
+                                    <option value="enda">Finalidade</option>
+                                    <option value="enda">Venda</option>
+                                    <option value="locação">Locação</option>
+                                    <option value="temporada">Temporada</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <select name="busca_tipo" id="">
+                                <option value="">Tipo de imóvel</option>
+                                <option value="apartamento">Apartamento</option>
+                                <option value="Área Comercial">Área Comercial</option>
+                                <option value="casa">Casa</option>
+                                <option value="casa em Condomínio">Casa em Condomínio</option>
+                                <option value="Chácara">Chácara</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <select name="busca_valor_min"  id="">  
+
+                                    <option selected="selected" value=""> Valor Mínimo</option>
+                                    <option value="0">- sem valor -</option>
+                                    <option value="500">R$ 500</option>
+                                    <option value="750">R$ 750</option>
+                                    <option value="1000">R$ 1.000</option>
+                                    <option value="1500">R$ 1.500</option>
+                                    <option value="2500">R$ 2.500</option>
+                                    <option value="5000">R$ 5.000</option>
+                                    <option value="10000">R$ 10.000</option>
+                                    <option value="25000">R$ 25.000</option>
+                                    <option value="40000">R$ 40.000</option>
+                                    <option value="60000">R$ 60.000</option>
+                                    <option value="80000">R$ 80.000</option>
+                                    <option value="100000">R$ 100.000</option>
+                                    <option value="150000">R$ 150.000</option>
+                                    <option value="200000">R$ 200.000</option>
+                                    <option value="300000">R$ 300.000</option>
+                                    <option value="400000">R$ 400.000</option>
+                                    <option value="500000">R$ 500.000</option>
+                                    <option value="600000">R$ 600.000</option>
+                                    <option value="700000">R$ 700.000</option>
+                                    <option value="800000">R$ 800.000</option>
+                                    <option value="900000">R$ 900.000</option>
+                      
+                                    <option value="1000000">R$ 1.000.000</option>
+                                    <option value="1200000">R$ 1.200.000</option>
+                                    <option value="1400000">R$ 1.400.000</option>
+                                    <option value="1600000">R$ 1.600.000</option>
+                                    <option value="1800000">R$ 1.800.000</option>
+                      
+                                    <option value="2000000">R$ 2.000.000</option>
+                                    <option value="2500000">R$ 2.500.000</option>
+                                    <option value="3000000">R$ 3.000.000</option>
+                                    <option value="3500000">R$ 3.500.000</option>
+                                    <option value="4000000">R$ 4.000.000</option>
+                                    <option value="4500000">R$ 4.500.000</option>
+                                    <option value="5000000">R$ 5.000.000</option>
+                                    <option value="5000000">Acima de R$ 5.000.000</option>
+                                    
+                            </select>
+                        </div>
+
+
+                        <div>
+                            <select name="busca_valor_max" id="">
+                                <option selected="selected" value=""> Valor Máximo</option>
+                                    <option value="0">- sem valor -</option>
+                                    <option value="500">R$ 500</option>
+                                    <option value="750">R$ 750</option>
+                                    <option value="1000">R$ 1.000</option>
+                                    <option value="1500">R$ 1.500</option>
+                                    <option value="2500">R$ 2.500</option>
+                                    <option value="5000">R$ 5.000</option>
+                                    <option value="10000">R$ 10.000</option>
+                                    <option value="25000">R$ 25.000</option>
+                                    <option value="40000">R$ 40.000</option>
+                                    <option value="60000">R$ 60.000</option>
+                                    <option value="80000">R$ 80.000</option>
+                                    <option value="100000">R$ 100.000</option>
+                                    <option value="150000">R$ 150.000</option>
+                                    <option value="200000">R$ 200.000</option>
+                                    <option value="300000">R$ 300.000</option>
+                                    <option value="400000">R$ 400.000</option>
+                                    <option value="500000">R$ 500.000</option>
+                                    <option value="600000">R$ 600.000</option>
+                                    <option value="700000">R$ 700.000</option>
+                                    <option value="800000">R$ 800.000</option>
+                                    <option value="900000">R$ 900.000</option>
+                      
+                                    <option value="1000000">R$ 1.000.000</option>
+                                    <option value="1200000">R$ 1.200.000</option>
+                                    <option value="1400000">R$ 1.400.000</option>
+                                    <option value="1600000">R$ 1.600.000</option>
+                                    <option value="1800000">R$ 1.800.000</option>
+                      
+                                    <option value="2000000">R$ 2.000.000</option>
+                                    <option value="2500000">R$ 2.500.000</option>
+                                    <option value="3000000">R$ 3.000.000</option>
+                                    <option value="3500000">R$ 3.500.000</option>
+                                    <option value="4000000">R$ 4.000.000</option>
+                                    <option value="4500000">R$ 4.500.000</option>
+                                    <option value="5000000">R$ 5.000.000</option>
+                                    <option value="5000000">Acima de R$ 5.000.000</option>
+                            </select>
+                        </div>
+
+
+                        <div>
+                            <button type="submit">Buscar <i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+
+
+
+                    </div>
+
+                </form>
+        </div>
+    </section>
+
+
+
+    <div class="icon_whats">
+        <img src="./img/whatsapp.png" alt="whatsapp">
+  </div>
+
+
+
+    <footer class="rodape">
+
+        <div class="pai_conteu_roda">
+              <div>
+                  <h3>SOBRE NÓS</h3>
+                  <hr>
+              </div>
+              <div class="desc_rodape">
+                  <h4>MOBILIZAR</h4>
+
+                  <p>Oferecemos soluções personalizadas para compra, venda e locação de imóveis, garantindo transparência e confiança em cada negociação. Com uma equipe experiente e dedicada, estamos comprometidos em realizar o sonho do imóvel perfeito para nossos clientes. Junte-se a nós e descubra um novo padrão de excelência no mercado imobiliário.</p>
+                  <p><strong>Creci</strong> 10101-SP </p>
+                  
+              </div>
+        </div>
+
+        <div class="pai_conteu_roda">
+            <div>
+                <h3>PROCURANDO POR</h3>
+                <hr>
+            </div>
+
+            <div class="links_rodape">
+                <a href=""><i class="fa-regular fa-circle-right"></i>Imóveis para Venda</a>
+                <a href=""><i class="fa-regular fa-circle-right"></i>Imóveis para Locação</a>
+                <a href=""><i class="fa-regular fa-circle-right"></i>Venda seu Imóvel</a>
+                <a href=""><i class="fa-regular fa-circle-right"></i>Pesquisa completa</a>
+            </div>
+        </div>
+
+        <div class="pai_conteu_roda">
+
+          <div>
+              <h3>CONTATO</h3>
+              <hr>
+          </div>
+
+          <div class="dados_contato">
+                <p><i class="fa-solid fa-location-dot"></i>Av. Manoel Goulart, 505 - Room 43 - Centro, Pres. Prudente - SP, 19010-270</p>
+                <p><i class="fa-solid fa-phone"></i>(18) 98128-2008 </p>
+                <p><i class="fa-regular fa-envelope"></i>contato@mobilizar.com.br </p>
+                <p><i class="fa-regular fa-clock"></i>Segunda a sexta das 08:30 às 18:00 / Sábado das 08:00 às 12:00 </p>
+                <a href=""><i class="fa-regular fa-circle-right"></i>Fale Conosco</a>
+                <a href=""><i class="fa-regular fa-circle-right"></i>Política de Privacidade</a>
+          </div>
+
+        </div>
+
+        <div class="direitos">
+            <div>
+                <p>www.mobilize.com.br &copy; 2024. Todos os direitos reservados.</p>
+            </div>
+            
+            <div>
+                <img src="https://www.imobibrasil.com.br/imagens/logo.png" alt="">
+            </div>
+        </div>
+
+  </footer>
+
+    
+    </body>
