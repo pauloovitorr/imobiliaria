@@ -1683,8 +1683,9 @@ html {
 }
 
 .pai_texto,
-.pai_contato{
-    width: 80%;
+.pai_contato,
+.pai_blog{
+    width: 70%;
     margin: 0 auto;
     padding-top: 20px;
     font-size: 1.1rem;
@@ -1692,7 +1693,7 @@ html {
 }
 
 .mapa{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 100px;
 }
@@ -1770,4 +1771,73 @@ html {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.container_blog{
+    margin-bottom: 100px;
+}
+
+.pai_blog{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    padding: 15px;
+    
+}
+
+.noticias{
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    /* border: 1px solid #CCCCCC; */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.noticias div:nth-child(1){
+    width: 25%;
+    /* border: 1px solid red; */
+}
+
+.noticias div:nth-child(2){
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.noticias img{
+    width: 240px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+
+.noticias a{
+    /* border: 2px solid red; */
+    width: 20%;
+}
+
+.noticias a button{
+    width: 100%;
+    background-color: #0D1E30;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 10p;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .5s;
+    font-size: 1.0rem;
+}
+
+.noticias a button:hover{
+    background-color: #0062FF;
 }

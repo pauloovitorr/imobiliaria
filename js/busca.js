@@ -14,7 +14,7 @@ function animaLinks() {
 animaLinks();
 
 let pai_fotos_imovel = document.querySelector('.pai_fotos_imovel')
-let img_imovel = document.querySelectorAll('.foto_imovel')
+let img_imovel = document.querySelectorAll('.item_carrossel')
 let volta = document.querySelector('.volta')
 let passa = document.querySelector('.passa')
 
