@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif
+   
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 
@@ -764,6 +764,11 @@ html {
     background-color: #F1F1F7;
     padding-bottom: 100px;
  }
+
+ .pai_destaque_aluguel{
+    width: 75%;
+    margin: 0 auto;
+ }
   
  .destaque_aluguel div:nth-child(1) h2{
     margin-top: 40px;
@@ -800,6 +805,7 @@ html {
     width: 100%;
     min-height: 220px;
     margin: 0px;
+    border: none;
  }
 
  .icon_whats{
@@ -1165,7 +1171,7 @@ html {
 
 .conteiner_busca_imovel{
     width: 100%;
-    min-height: 65vh;
+    min-height: 50vh;
     background-color: #F1F1F7;
     border: 1px solid transparent
 }
