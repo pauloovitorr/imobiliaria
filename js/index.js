@@ -127,15 +127,15 @@ animaLinks();
 
 
 // função para animar os selects
-select_busca.forEach((item) => {
-  item.addEventListener("click", function () {
-    item.classList.toggle("select_foco");
-  });
+// select_busca.forEach((item) => {
+//   item.addEventListener("click", function () {
+//     item.classList.toggle("select_foco");
+//   });
 
-  item.addEventListener("blur", function () {
-    item.classList.remove("select_foco");
-  });
-});
+//   item.addEventListener("blur", function () {
+//     item.classList.remove("select_foco");
+//   });
+// });
 
 
 
