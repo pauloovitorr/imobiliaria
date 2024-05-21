@@ -406,6 +406,43 @@ html {
     z-index: 0;
 }
 
+.pai_sobre_nos{
+    width: 100%;
+    height: 450px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#texto_sobre_nos{
+    width: 590px;
+    height: 450px;
+    /* border: 1px solid rgb(8, 84, 225); */
+    margin-right: 10px;
+    padding: 5px;
+
+}
+
+#texto_sobre_nos h2{
+    font-size: 68px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    /* text-align: center; */
+}
+
+#img_sobre_nos{
+    width: 575px;
+    height: 450px;
+    /* border: 1px solid black; */
+}
+
+#img_sobre_nos img{
+    width: 515px;
+    height: 430px;
+}
 
 .titulo_item_especialidade{
     font-size: 32px;
