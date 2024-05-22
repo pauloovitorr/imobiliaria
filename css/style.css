@@ -261,6 +261,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 2px solid red; */
  
 }
 
@@ -289,16 +290,20 @@ html {
 
 .container_especialidades{
     width: 100%;
-    height: 600px;
+    min-height: 500px;
     background-color: white;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
     justify-content: center;
+    /* border: 2px solid rgb(231, 13, 13); */
+    margin-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .especialidade{
-    width: 23%;
+    width: 300px;
     height: 400px;
     border: none;
     /* transform: skew(180deg); */
@@ -309,6 +314,8 @@ html {
     background-repeat: no-repeat;
     transition: .6s;
     border-radius: 3px;
+    /* border: 2px solid black; */
+    margin-top: 80px;
 }
 
 
@@ -321,11 +328,13 @@ html {
     border-radius: 8px;
     margin-top: 370px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     transform: skew(180deg);
     cursor: pointer;
     transition: .7s;
+    
 }
 
 
@@ -391,6 +400,7 @@ html {
 
 .pai_especialidade2:hover .fundo_especialidade2{
     scale: 1.1;
+    /* border: 2px solid red; */
 }
 
 .fundo_especialidade2{
@@ -403,7 +413,7 @@ html {
     position: absolute;
     /* margin-left: 2px; */
     transition: .5s all;
-    z-index: 0;
+    z-index: -1;
 }
 
 .pai_sobre_nos{
@@ -417,10 +427,10 @@ html {
 }
 
 #texto_sobre_nos{
-    width: 590px;
+    width: 575px;
     height: 450px;
     /* border: 1px solid rgb(8, 84, 225); */
-    margin-right: 10px;
+    margin-right: 30px;
     padding: 5px;
 
 }
@@ -447,9 +457,9 @@ html {
 .titulo_item_especialidade{
     font-size: 32px;
     font-weight: 400;
-    /* width: 200px;
-    height: 200px;
-    background-color: white; */
+    /* width: 300px; */
+    height:150px;
+    /* background-color: white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -485,7 +495,7 @@ html {
     transition: 0.4s ease-in;
     position: relative;
     opacity: 0;
-    bottom: -60px;
+    bottom: -30px;
 }
 
 .pai_especialidade2:hover .titulo_item_especialidade button {
@@ -500,12 +510,12 @@ html {
 }
 
 .fundo_especialidade2::after{
-    content: ' ';
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    z-index: 0;
+    z-index: -1;
     background-color: rgba(0,0,0,0.3);
 }
 
@@ -785,7 +795,8 @@ html {
   }
   
   .carousel__body {
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
     height: 550px;
     padding: 50px 10px ;
     overflow: hidden;
@@ -813,6 +824,8 @@ html {
     margin-right: 20px;
     cursor: pointer;
     transition: .6s all;
+
+    /* border: 2px solid red; */
   
   }
   
@@ -898,7 +911,7 @@ html {
     max-width: 70px;
     max-height: 20px;
     color: rgba(0, 0, 0, 0.582);
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     /* border: 1px solid red; */
   }
@@ -946,8 +959,8 @@ html {
   
  .destaque_aluguel{
     padding-top: 15px;
-    min-height: 900px;
-    width: 100%;
+    /* min-height: 900px;
+    width: 900px; */
     /* border: 1px solid red; */
     background-color: #F1F1F7;
     padding-bottom: 100px;
@@ -965,7 +978,7 @@ html {
     /* padding: 10px; */
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+     align-items: center; 
     justify-content: space-around;
  }
 
@@ -1435,7 +1448,7 @@ html {
 
 .conteiner_imoveis_busca{
     width: 100%;
-    /* border: 1px solid red; */
+    /* border: 1px solid rgb(0, 255, 115); */
     margin-bottom: 100px;
     /* background-color: white; */
 }
@@ -2048,4 +2061,136 @@ html {
 
 .noticias a button:hover{
     background-color: #0062FF;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 1140px){
+
+    .opcoes ul{
+        width: 80%;
+        /* background-color: red */
+    }
+
+
+    .filtro form div button{
+       /* background-color: red; */
+       width: 90%;
+    }
+
+    .pai_sobre_nos{
+        width: 85%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    
+    #texto_sobre_nos > h2{
+        font-size: 40px;
+    }
+
+    #texto_sobre_nos > p{
+        font-size: 13px;
+    }
+
+    #img_sobre_nos > img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .pai_busca_imovel{
+        width: 98%;
+        /* border: 2px solid rgb(0, 255, 55); */
+       }
+   
+
+    .imovel_destaque{
+        width: 90%;
+        /* border: 2px solid red; */
+    }
+
+   .item_destaque{
+    width: 270px ; 
+    height: 360px;
+    /* border: 2px solid red; */
+   }
+
+   .pai_input_busca{
+    width: 915px;
+    /* border: 2px solid red; */
+}
+
+.pai_input_busca div{
+    width: 115px ;
+    font-size: 12px;
+    
+}
+
+.conteudo_imovel_destaque h3{
+    font-size: 12px;
+    /* border: 2px solid red; */
+    width: 65%;
+}
+
+.valor_des{
+    font-size: 14px;
+}
+
+.corretor_resp{
+    /* border: 3px solid red; */
+    width: 60px;
+    height: 60px;
+}
+
+.corretor_resp p{
+    /* border: 3px solid red; */
+    font-size: 13px;
+    width: 100%;
+}
+
+
+.icon_des{
+    width: 170px;
+    margin-top: 30px;
+    font-size: 10px;
+    /* border: 1px solid red; */
+}
+
+.noticias{
+    /* border: 3px solid red; */
+}
+
+.noticias img{
+    width: 200px;
+    height: 150px;
+}
+
+.noticias div:nth-child(2) h3{
+    font-size: 16px;
+}
+
+.noticias div:nth-child(2) p{
+    font-size: 14px;
+}
+
+.noticias a{
+    /* border: 2px solid red; */
+    width: 40%;
+}
+
+
+.noticias div:nth-child(2)  button{
+    padding: 8px 12px;
+    width: 90%;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
 }
