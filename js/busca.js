@@ -2,18 +2,33 @@ let links = document.querySelectorAll(".link_menu");
 
 
 
+let ttt = document.querySelector('.ttt')
+let fecha_icon = document.querySelector('.fecha_icon')
+
+
+let links_res = document.querySelectorAll('.opcoes_res ul a')
 
 
 
-// Click para abrir menu responsivo
-// let ttt = document.querySelector('.ttt')
+let menu_responsivo = document.querySelector('.menu_responsivo')
 
-// console.log(ttt)
 
-// ttt.addEventListener('click', function(){
-//   alert('oi')
-// })
+ttt.addEventListener('click', function(){
+  menu_responsivo.classList.add('menu_responsivo_vista')
 
+})
+
+fecha_icon.addEventListener('click', function(){
+  menu_responsivo.classList.toggle('menu_responsivo_vista')
+})
+
+document.addEventListener('click', function(event) {
+  const isClickInside = menu_responsivo.contains(event.target) || ttt.contains(event.target);
+  
+  if (!isClickInside) {
+    menu_responsivo.classList.remove('menu_responsivo_vista');
+  }
+});
 
 
 

@@ -70,6 +70,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: end;
+    
 }
 
 .opcoes ul{
@@ -79,6 +80,7 @@ html {
     justify-content: space-around;
     font-size: 16px;
     margin-right: 60px;
+    /* background-color: red; */
 }
 
 .opcoes ul svg{
@@ -96,10 +98,11 @@ html {
     position: relative;
     cursor: pointer;
     padding: 8px 0px;
-    top: -110px;
+    /* top: -110px; */
     transition: .5s;
     animation: animalink 1s ease-in-out;
-    opacity: 0;
+    opacity: 1;
+    /* border: 2px solid black; */
 }
 
 .menu_responsivo{
@@ -128,7 +131,7 @@ html {
 }
 
 .menu_responsivo_vista{
-    width: 40%;
+    width: 400px;
     transition: .5s;
     opacity: 1;
     z-index: 4;
@@ -144,7 +147,7 @@ html {
 }
 
 .opcoes_res ul{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -158,11 +161,13 @@ html {
     position: relative;
     top: 0px;
     transition: .5s all;
+    /* border: 2px solid red; */
+    font-size: 20px;
 }
 
 .link_res_visto{
     top: 0px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .link_menu_avista{
@@ -174,6 +179,7 @@ html {
 .link_menu_pag{
     top: 0;
     color: white;
+    
    
 }
 
@@ -618,6 +624,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: end;
+   
     
 }
 
@@ -629,14 +636,24 @@ html {
     text-align: center;
 }
 
+/* .section_imoveis_destaque{
+    border: 3px solid rgb(21, 255, 0);
+    height: auto !;
+    margin-bottom: 50px;
+} */
+
 .imoveisdestaque{
     width: 100%;
     margin: 0 auto;
-    height: 900px;
+    min-height: 900px;
+    height: auto;
     background-color: #F1F1F7;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    /* border: 2px solid red; */
+    padding-bottom: 50px;
 }
 
 
@@ -685,6 +702,8 @@ html {
    position: relative;
    padding-left: 20px;
    padding-top: 10px;
+   
+   /* border: 3px solid red; */
    
 }
 
@@ -738,11 +757,12 @@ html {
 .imoveis_d{
     width: 90%;
     margin: 0 auto;
-    height: 750px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    /* border: 3px solid red; */
 }
 
 .imoveis_d .card_imovel:nth-child(1),
@@ -806,6 +826,7 @@ html {
     background-image: url('../img/houseD6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -2273,6 +2294,26 @@ html {
     font-size: 1.2rem;
 }
 
+.rodape p,
+.rodape a{
+    /* border: 2px solid red; */
+    font-size: 13px;
+}
+
+.rodape h3{
+    font-size: 16px;
+}
+
+.pai_input_busca{
+    width: 700px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
 
 }
 
@@ -2342,8 +2383,15 @@ html {
         margin: 0 auto;
     }
 
+    .imoveisdestaque{
+        /* height: 1200px; */
+        /* border: 2px solid red; */
+    }
 
-
+    .card_imovel{
+        width: 300px !important;
+        /* border: 2px solid red; */
+    }
 
 
 
