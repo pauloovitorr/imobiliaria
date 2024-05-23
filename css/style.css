@@ -117,7 +117,7 @@ html {
     align-items: center;
     z-index: -1;
     opacity: 0;
-    transition: .5s;
+    transition: .5s ease-in;
     overflow: hidden;
 
 }
@@ -2161,7 +2161,22 @@ html {
 
 /* Responsividade */
 
-@media (max-width: 1140px){
+
+
+@media (max-width:1290px) {
+    /* .imovel_destaque{
+        width: 900px;
+        border: 2px solid red;
+    }
+
+    .itens_busca{
+        width: 900px;
+        border: 2px solid;
+    } */
+}
+
+
+@media (max-width: 1200px){
 
     .opcoes ul{
         width: 80%;
@@ -2305,13 +2320,23 @@ html {
 }
 
 .pai_input_busca{
-    width: 700px;
+    width: 800px;
     height: 100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+.pai_input_busca div{
+    width: 120px ;
+    /* border: 1px solid red; */
+    text-align: end;
+}
+
+.pai_input_busca div select{
+    width: 90%;
 }
 
 
@@ -2362,11 +2387,11 @@ html {
     }
 
     #texto_sobre_nos > h2{
-        font-size: 45px;
+        font-size: 47px;
     }
 
     #texto_sobre_nos > p{
-        font-size: 15px;
+        font-size: 17px;
     }
 
     #img_sobre_nos{
@@ -2383,30 +2408,172 @@ html {
         margin: 0 auto;
     }
 
-    .imoveisdestaque{
-        /* height: 1200px; */
-        /* border: 2px solid red; */
-    }
-
+  
     .card_imovel{
         width: 300px !important;
+    }
+
+    .pai_input_busca{
+       width: 75%;
+       height: auto;
+       /* border: 2px solid red; */
+       flex-wrap: wrap;
+       margin-bottom: 80px;
+    }
+
+    .pai_input_busca div{
+        /* border: 2px solid red; */
+        width:  160px;
+        margin-top: 15px;
+    }
+
+    .pai_input_busca div select{
+        width: 100%;
+    }
+
+    body > section.conteiner_busca_imovel > div > form > div > div:nth-child(7){
+        width: 100%;
+        /* border: 2px solid red; */
+        text-align: center;
+    }
+
+    body > section.conteiner_busca_imovel > div > form > div > div:nth-child(7) button{
+        width: 150px;
+    }
+    
+
+.pai_busca_imovel{
+    margin-top: 120px;
+}
+
+}
+
+@media (max-width:700px) {
+    
+    .container_busca{
+        width: 90%;
+        margin: 0 auto;
+        /* border: 2px solid red; */
+    }
+    
+    .container_busca h1{
+        font-size: 1.8rem;
+    }
+    
+    
+    .container_busca p{
+        font-size: 1.0rem;
+    }
+
+    .filtro{
+        /* border: 2px solid red; */
+        width: 350px;
+        height: 350px;
+        border-radius: 3px;
+       
+    }
+
+    .filtro form {
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: white;
+        border-radius: 3px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .filtro form div{
+        width: 300px;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        /* margin-top: 10px; */
+    }
+
+    .pp{
+        animation: none;
+    }
+
+    .logo{
+        width: 100%;
         /* border: 2px solid red; */
     }
 
+    .logo a img{
+        /* border: 2px solid red; */
+    }
+    
 
+    .rodape{
+        flex-wrap: wrap;
+        height: auto;
+    }
 
+    .rodape div{
+        /* border: 2px solid red; */
+        height: auto;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
 
+    .rodape div p,
+    .rodape div a{
+        font-size: 14px;
+    }
 
+    body > footer > div:nth-child(3){
+        /* border: 2px solid red; */
+        /* height: 400px; */
+        margin-bottom: 100px;
+    }
 
+    .direitos{
+        flex-wrap: wrap;
+        height: auto;
+        margin-top: 30px;
+        /* border: 3px solid red; */
+    }
 
+    .direitos div{
+        width: 100%;
+        /* border: 2px solid red; */
+    }
 
+    .direitos div:nth-child(1) p{
+        width: 100%;
+        /* border: 2px solid white; */
+        font-size: 12px;
+    }
 
+    
+    .pai_input_busca{
+        width: 70%;
+        height: auto;
+        /* border: 2px solid red; */
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+     }
 
+     .pai_input_busca div{
+        /* border: 2px solid red; */
+        width:  150px;
+        margin-top: 15px;
+    }
 
+}
 
+@media (max-width:445px){
+    .pai_input_busca{
+        width: 85%;
+        height: auto;
+        /* border: 2px solid red; */
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+     }
 
-
-
-
-
+     .pai_input_busca div{
+        /* border: 2px solid red; */
+        width:  120px;
+        margin-top: 15px;
+    }
 }
