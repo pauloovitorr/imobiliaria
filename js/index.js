@@ -160,23 +160,6 @@ function animaLinks() {
 animaLinks();
 
 
-
-
-// função para animar os selects
-// select_busca.forEach((item) => {
-//   item.addEventListener("click", function () {
-//     item.classList.toggle("select_foco");
-//   });
-
-//   item.addEventListener("blur", function () {
-//     item.classList.remove("select_foco");
-//   });
-// });
-
-
-
-// Carrosel
-
 (function() {
   "use strict";
 
@@ -189,22 +172,24 @@ animaLinks();
   var width, height, totalWidth, margin = 20,
       currIndex = 0,
       interval, intervalTime = 4000;
+
+  var touchStartX = 0;
+  var touchEndX = 0;
   
   function init() {
       resize();
       move(Math.floor(items.length / 2));
       bindEvents();
-    
       timer();
   }
   
   function resize() {
-      width = Math.max(window.innerWidth * .25, 275),
-      height = window.innerHeight * .5,
+      width = Math.max(window.innerWidth * .25, 275);
+      height = window.innerHeight * .5;
       totalWidth = width * items.length;
-    
+      
       slider.style.width = totalWidth + "px";
-    
+      
       for(var i = 0; i < items.length; i++) {
           let item = items[i];
           item.style.width = (width - (margin * 2)) + "px";
@@ -213,54 +198,71 @@ animaLinks();
   }
   
   function move(index) {
-    
       if(index < 1) index = items.length;
       if(index > items.length) index = 1;
       currIndex = index;
-    
+      
       for(var i = 0; i < items.length; i++) {
           let item = items[i],
               box = item.getElementsByClassName('item__3d-frame')[0];
           if(i == (index - 1)) {
-             item.classList.add('carousel__slider__item--active');
-              box.style.transform = "perspective(1200px)"; 
+              item.classList.add('carousel__slider__item--active');
+              box.style.transform = "perspective(1200px)";
           } else {
-            item.classList.remove('carousel__slider__item--active');
+              item.classList.remove('carousel__slider__item--active');
               box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
           }
       }
-    
+      
       slider.style.transform = "translate3d(" + ((index * -width) + (width / 2) + window.innerWidth / 2) + "px, 0, 0)";
   }
   
   function timer() {
       clearInterval(interval);    
       interval = setInterval(() => {
-        move(++currIndex);
+          move(++currIndex);
       }, intervalTime);    
   }
   
   function prev() {
-    move(--currIndex);
-    timer();
+      move(--currIndex);
+      timer();
   }
   
   function next() {
-    move(++currIndex);    
-    timer();
+      move(++currIndex);    
+      timer();
   }
-  
   
   function bindEvents() {
       window.onresize = resize;
       prevBtn.addEventListener('click', () => { prev(); });
-      nextBtn.addEventListener('click', () => { next(); });    
+      nextBtn.addEventListener('click', () => { next(); });
+
+      // Adiciona eventos de toque
+      slider.addEventListener('touchstart', handleTouchStart, false);        
+      slider.addEventListener('touchmove', handleTouchMove, false);
+      slider.addEventListener('touchend', handleTouchEnd, false);
   }
 
+  function handleTouchStart(event) {
+      touchStartX = event.touches[0].clientX;
+  }
 
+  function handleTouchMove(event) {
+      touchEndX = event.touches[0].clientX;
+  }
 
+  function handleTouchEnd() {
+      var deltaX = touchEndX - touchStartX;
+      if (Math.abs(deltaX) > 50) { 
+          if (deltaX > 0) {
+              prev();
+          } else {
+              next();
+          }
+      }
+  }
 
-  
   init();
-  
 })();
