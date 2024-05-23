@@ -1066,7 +1066,7 @@ html {
  }
 
  .imovel_destaque{
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     margin-top: 30px;
     /* border: 1px solid red; */
@@ -1705,7 +1705,7 @@ html {
     z-index: -1;
 }
 
-.valor_imovel, .valor_imovel::before{
+ .valor_imovel::before{
     background-color: #0D1E30;
 }
 
@@ -1813,7 +1813,6 @@ html {
     background-color: white;
     padding: 25px;
 }
-
 
 
 .pai_descricao:hover .titulo_desc hr,
@@ -2103,7 +2102,7 @@ html {
 
 .noticias{
     height: 150px;
-    width: 100%;
+    max-width: 1150px;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 50px;
@@ -2396,6 +2395,95 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
     }
 
 
+    .pai_conteudo{
+        width: 100%;
+        /* border: 3px solid red; */
+        flex-wrap: wrap;
+    }
+
+
+    .conteiner_busca_imovel{
+        /* border: 2px solid red; */
+        width: 90%;
+        margin: 0 auto;
+    }
+
+   .item_carrossel{
+    width: 100%;
+    /* border: 2px solid red; */
+   }
+
+
+
+    .info_imovel{
+     
+        flex: 0 0 90%;
+        margin: 0 auto;
+        height: auto;
+        background-color: white;
+        
+    }
+
+    .texto_titulo h1{
+        font-size: 30px;
+    }
+
+   
+    .faleconosco{
+        flex: 0 0 90%;
+        margin: 0 auto;
+        
+        background-color: white;
+        height: 460px;
+        padding: 30px;
+        /* border: 2px solid red; */
+        margin-top: 50px;
+    }
+
+    #mensagem1{
+        width: 80%;
+        /* border: 3px solid red; */
+    }
+
+    .pontos_fortes{
+        width: 100%;
+        flex-wrap: wrap;
+        /* border: 2px solid red; */
+        padding: 10px;
+    }
+
+    .pontos_fortes p{
+        /* border: 3px solid black; */
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .pai_descricao{
+        width: 100%;
+    }
+
+    .pai_fale_conosco{
+        display: none;
+    }
+
+    .pai_central_negocios{
+        width: 100%;
+    }
+
+    .pai_central_negocios h2,
+    .faleconosco__title,
+    .titulo_desc h2,
+    .titulo_imovel_similar h2,
+    .titulo_imovel_similar h2{
+        font-size: 20px;
+    }
+
+    .pai_similar{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+
 } 
 
 
@@ -2503,9 +2591,13 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
     margin-top: 120px;
 }
 
+
+
 }
 
 @media (max-width:700px) {
+
+    
     
     .container_busca{
         width: 90%;
@@ -2656,7 +2748,7 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
 
 
 
-@media (max-width:445px){
+@media (max-width:450px){
     .pai_input_busca{
         width: 85%;
         height: auto;
@@ -2676,10 +2768,91 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
     }
 
 
+    .info_imovel{
+     
+        flex: 0 0 100%;
+        margin: 0 auto;
+        height: auto;
+        background-color: white;
+        /* border: 3px solid red; */
+    }
+
+    .info_imovel i{
+        font-size: 12px;
+    }
+
+    .texto_titulo h1{
+        font-size: 30px;
+    }
+
+    .texto_titulo span{
+        width: 100%;
+    }
+
+ 
+    .cxItem{
+        margin: 10px;
+    }
+
+    .pontos_fortes{
+        width: 100%;
+        padding: 20px;
+    }
+   
+    .faleconosco{
+        flex: 0 0 100%;
+        margin: 0 auto;
+        
+        background-color: white;
+        height: 460px;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    #mensagem1{
+        width: 100%;
+    }
+
+    .pai_descricao{
+        width: 100%;
+    }
+
+ 
+
+.valor_imovel{
+    width: 50px;
+    /* border: 3px solid red; */
+    margin: 0px;
+    font-size: 30px;
+}
 
 
+.valor_imovel::before {
+    content: " ";
+    position: absolute;
+    left: -60%;
+    height: 100%;
+    width: 150%;
+    top: 0;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+    z-index: -1;
+}
 
+.info_imovel{
+    width: 100%;
+}
 
+.caracteristicas{
+    width: 100%;
+}
+
+.container_descricao,
+.container_fotos_imovel,
+.conteiner_busca_imovel,
+.container_central_de_negocios,
+.conteiner_imoveis_similar{
+    width: 100%;
+}
 
 
 }
