@@ -2855,4 +2855,17 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
 }
 
 
+body > main > section.destaque_venda > div.carousel > div > div.carousel__next > i{
+    display: none;
+}
+
+body > main > section.destaque_venda > div.carousel > div > div.carousel__prev > i{
+    display: none;
+}
+
+.volta,
+.passa{
+    width: 50px !important;
+}
+
 }

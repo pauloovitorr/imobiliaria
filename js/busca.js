@@ -48,25 +48,32 @@ function animaLinks() {
 
 animaLinks();
 
-let pai_fotos_imovel = document.querySelector('.pai_fotos_imovel')
-let img_imovel = document.querySelectorAll('.item_carrossel')
-let volta = document.querySelector('.volta')
-let passa = document.querySelector('.passa')
 
 
-console.log(img_imovel)
+
+
+
+
+
+
+let pai_fotos_imovel = document.querySelector('.pai_fotos_imovel');
+let img_imovel = document.querySelectorAll('.item_carrossel');
+let volta = document.querySelector('.volta');
+let passa = document.querySelector('.passa');
+
+// console.log(img_imovel);
 
 volta.addEventListener('click', function(){
-  volta_equipe()
-})
+  volta_foto_imovel();
+});
 
 passa.addEventListener('click', function(){
-  corresel_foto_imovel()
-})
+  corresel_foto_imovel();
+});
 
-let cont_foto = 0
+let cont_foto = 0;
+
 // Corresel passa foto do imóvel
-
 function corresel_foto_imovel() {
   cont_foto++;
 
@@ -80,12 +87,11 @@ function corresel_foto_imovel() {
     translateX += img_imovel[i].offsetWidth;
   }
 
-
   pai_fotos_imovel.style.transform = `translateX(${-translateX}px)`;
 }
 
 // Corresel volta foto do imóvel
-function volta_equipe() {
+function volta_foto_imovel() {
   cont_foto--;
 
   if (cont_foto < 0) {
@@ -99,6 +105,33 @@ function volta_equipe() {
 
   pai_fotos_imovel.style.transform = `translateX(${-translateX}px)`;
 }
+
+// Variáveis para armazenar as posições do toque
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Função para lidar com o início do toque
+function handleTouchStart(event) {
+  touchStartX = event.changedTouches[0].screenX;
+}
+
+// Função para lidar com o fim do toque
+function handleTouchEnd(event) {
+  touchEndX = event.changedTouches[0].screenX;
+  var deltaX = touchEndX - touchStartX;
+  if (Math.abs(deltaX) > 50) { // Verifica se o deslize foi significativo (mais de 50 pixels)
+    if (deltaX > 0) {
+      volta_foto_imovel();
+    } else {
+      corresel_foto_imovel();
+    }
+  }
+}
+
+// Adiciona os listeners de toque ao carrossel
+pai_fotos_imovel.addEventListener('touchstart', handleTouchStart);
+pai_fotos_imovel.addEventListener('touchend', handleTouchEnd);
+
 
 
 
