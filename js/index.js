@@ -12,6 +12,43 @@ let volta = document.querySelector('.volta')
 let passa = document.querySelector('.passa')
 
 
+
+
+// Click para abrir menu responsivo
+let ttt = document.querySelector('.ttt')
+let fecha_icon = document.querySelector('.fecha_icon')
+
+
+let links_res = document.querySelectorAll('.opcoes_res ul a')
+
+
+
+let menu_responsivo = document.querySelector('.menu_responsivo')
+
+
+ttt.addEventListener('click', function(){
+  menu_responsivo.classList.add('menu_responsivo_vista')
+
+})
+
+fecha_icon.addEventListener('click', function(){
+  menu_responsivo.classList.toggle('menu_responsivo_vista')
+})
+
+document.addEventListener('click', function(event) {
+  const isClickInside = menu_responsivo.contains(event.target) || ttt.contains(event.target);
+  
+  if (!isClickInside) {
+    menu_responsivo.classList.remove('menu_responsivo_vista');
+  }
+});
+
+
+
+
+
+
+
 volta.addEventListener('click', function(){
   volta_equipe()
 })
@@ -33,7 +70,7 @@ function corresel_equipe(){
     }
 
     pai_equipe.style.transform = `translateX(${-cont_equipe * 360}px)`
-    console.log(cont_equipe)
+    
 
 }
 
@@ -49,7 +86,6 @@ function volta_equipe(){
 
     pai_equipe.style.transform = `translateX(-${cont_equipe * 350}px)`
 
-    console.log('oooooooooo' + cont_equipe)
 
 }
 

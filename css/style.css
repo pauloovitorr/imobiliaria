@@ -81,6 +81,14 @@ html {
     margin-right: 60px;
 }
 
+.opcoes ul svg{
+    color: white;
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+    z-index: 4;
+}
+
 
 .link_menu{
     text-decoration: none;
@@ -88,15 +96,79 @@ html {
     position: relative;
     cursor: pointer;
     padding: 8px 0px;
-    top: -80px;
+    top: -110px;
     transition: .5s;
     animation: animalink 1s ease-in-out;
+    opacity: 0;
 }
 
+.menu_responsivo{
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    border: 2px solid black;
+    right: 0;
+    top: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s;
+    overflow: hidden;
+
+}
+
+.fecha_icon{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.menu_responsivo_vista{
+    width: 40%;
+    transition: .5s;
+    opacity: 1;
+    z-index: 4;
+
+}
+
+
+.opcoes_res{
+    /* border: 2px solid white; */
+    overflow: hidden;
+    width: 100%;
+    height: 60%;
+}
+
+.opcoes_res ul{
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* list-style: none; */
+}
+
+.opcoes_res ul a{
+    position: relative;
+    top: 0px;
+    transition: .5s all;
+}
+
+.link_res_visto{
+    top: 0px;
+    border: 2px solid red;
+}
 
 .link_menu_avista{
     transition: .5s;
     top: 0;
+    opacity: 1;
 }
 
 .link_menu_pag{
@@ -176,6 +248,7 @@ html {
     text-align: center;
     color: white;
     position: relative;
+    /* border: 3px solid red; */
 }
 
 .container_busca h1{
@@ -384,7 +457,7 @@ html {
 .pai_especialidade2{
     width: 50%;
     height: 50%;
-    /* border: 2px solid black; */
+    /* border: 2px solid rgb(15, 97, 240); */
     overflow: hidden;
     position: relative;
     transition: .5s all;
@@ -418,9 +491,10 @@ html {
 
 .pai_sobre_nos{
     width: 100%;
-    height: 450px;
+    min-height: 450px;
     /* border: 2px solid red; */
     display: flex;
+   
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
@@ -2157,6 +2231,7 @@ html {
 }
 
 .noticias{
+    
     /* border: 3px solid red; */
 }
 
@@ -2184,6 +2259,99 @@ html {
     width: 90%;
     font-size: 15px;
 }
+
+.container_busca{
+    width: 90%;
+}
+
+.container_busca h1{
+    font-size: 2.4rem;
+}
+
+
+.container_busca p{
+    font-size: 1.2rem;
+}
+
+
+}
+
+
+@media (max-width: 850px) {
+
+    .opcoes ul{
+        justify-content: end;
+    }
+
+    .opcoes ul li{
+        display: none;
+    }
+
+    .opcoes ul svg{
+        display: block;
+    }
+
+    .especialidades2{
+       
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pai_especialidade2{
+        width: 100%;
+        height: 350px;
+    }
+
+
+
+    .pai_sobre_nos{
+        width: 95%;
+        flex-direction: column;
+       
+        margin-bottom: 20px;
+    }
+
+    #texto_sobre_nos{
+        width: 90%;
+        margin: 0 auto;
+        height: inherit;
+      
+      
+    }
+
+    #texto_sobre_nos > h2{
+        font-size: 45px;
+    }
+
+    #texto_sobre_nos > p{
+        font-size: 15px;
+    }
+
+    #img_sobre_nos{
+        width: 90%;
+        height: inherit;
+        margin: 0 auto;
+       
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #img_sobre_nos img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,25 @@
 let links = document.querySelectorAll(".link_menu");
 
+
+
+
+
+
+// Click para abrir menu responsivo
+// let ttt = document.querySelector('.ttt')
+
+// console.log(ttt)
+
+// ttt.addEventListener('click', function(){
+//   alert('oi')
+// })
+
+
+
+
+
+
+
 // Anima os links do menu
 function animaLinks() {
   let temp = 100;
