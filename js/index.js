@@ -123,7 +123,7 @@ function hover_destaque(){
   imoveis_destaque.forEach((item)=>{
     item.addEventListener('mouseover', function(){
         let filho = item.firstElementChild
-        filho.style.height = '220px'
+        filho.style.height = '150px'
         item.style.border = 'red'
     });
   });

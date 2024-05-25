@@ -2592,6 +2592,18 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
 }
 
 
+.carousel__slider__item .dados_imove_venda,
+.item_destaque .dados_imove_venda{
+  box-shadow: 0px 2px 1px 0px rgb(189, 189, 189);
+}
+
+.cod_contato{
+    padding: 15px;
+}
+
+.conteudo_imovel_destaque{
+    height: 150px;
+}
 
 }
 
@@ -2733,9 +2745,7 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
         /* border: 1px solid red; */
     }
     
-    body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(2){
-        /* border: 2px solid rgb(0, 38, 255); */
-    }
+   
     
     .noticias div:nth-child(2) a{
         /* border: 2px solid red; */
@@ -2759,6 +2769,12 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
         bottom: 20px;
         left:  10px;
     }
+
+
+
+
+
+ 
 
         
 
