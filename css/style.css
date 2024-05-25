@@ -2744,6 +2744,24 @@ body > section.container_blog > div.pai_blog > div:nth-child(1) > div:nth-child(
         margin-top: 10px;
     }
 
+    .select_busca{
+        /* border: 2px solid black; */
+        margin-bottom: 6px;
+    }
+
+    .filtro{
+        height: auto;
+    }
+
+    .icon_whats{
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        left:  10px;
+    }
+
+        
+
 }
 
 
