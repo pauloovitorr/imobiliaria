@@ -212,7 +212,7 @@ html {
     /* border: 2px solid red; */
     z-index: -1;
     position: absolute;
-    background-image: url('../img/Mansao.jpg');
+    background-image: url('../img/Mansao.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     animation: zoom 26s  2s infinite linear;
